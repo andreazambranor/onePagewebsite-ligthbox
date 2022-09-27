@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" lang="en">
+    <title>Your next destination</title>
+    <link rel="stylesheet" href="./css/One-page-website.css">
+    <script src="./JS/main.js" defer></script>
+</head>
+
+<body>
+
+    <!--NAV-->
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <li><a href="#HOME"> HOME </a></li>
+                <li><a href="#ABOUT"> ABOUT </a></li>
+                <li><a href="#POI"> PLACES OF INTEREST </a></li>
+                <li><a href="#GALLERY"> GALLERY </a></li>
+                <li><a href="#BOOK"> BOOK YOUR TRIP </a></li>
+            </ul>
+        </div>
+    </div>
+    <!--END NAV-->
+
+    <!--HOME-->
+    <div id="HOME">
+        <div class="home-container">
+            <div class="home-title">
+                <h1>QUERETARO CITY</h1>
+                <h2>A wonderful and safe destination</h2>
+            </div>
+        </div>
+    </div>
+    <!--END HOME-->
+
+    <!--ABOUT-->
+    <div id="ABOUT">
+        <div>
+            <h4>About the City</h4>
+            <p>Queretaro city is located in central Mexico, capital of the state of Queretaro.
+                <br>Founded in 1531, it is a historical place that has preserved its very characteristic spanish colonial architecture, making it an amzing place to visit and to have fun, as it has also grown to become the biggest city of the state. There
+                multiple places for families to visit and also has a very active nightlife, something very unique as you will encounter unlimited options for things to do at any time and for everyone.
+                <br> It is also surrounded of many small towns like San Miguel de Allende, Tequisquiapan, Bernal, and others, at 40 min drive each; where you can also find very unique and historical places, and lots of things to do, lots of places to
+                visit and delicious traditional food to try, all in the nice usual warm weather of the area.
+            </p>
+        </div>
+    </div>
+    <!--END ABOUT-->
+
+    <!--POI-->
+    <div id="POI">
+        <div>
+            <h4>Places to visit</h4>
+            <div class="flex-container">
+
+                <!--POI 1-->
+                <div class="text-container">
+                    <h3>The Aqueduct</h3>
+                    <p>One of the most iconic places in the city, the aqueduct History and views are one of the city's most visited attractions.</p>
+                    <a href="https://goo.gl/maps/eBx23vHXkie4BcqU6">Click here to view location</a>
+                </div>
+                <!--END POI 1-->
+
+                <!--POI 2-->
+                <div class="text-container">
+                    <h3>Plaza de Armas</h3>
+                    <p>This area is stunning and dives into the local culture with many one of a kind, local shops and restaurants.</p>
+                    <a href="https://goo.gl/maps/EC2KNCqFskc3519R8">Click here to view location</a>
+                </div>
+                <!--END POI 3-->
+
+                <!--POI 3-->
+                <div class="text-container">
+                    <h3>Cerro de las campanas</h3>
+                    <p>A hill and national park, a historical place that marks the end of the second French intervention in Mexico, and unique rocks that sound like bells when you hit them.</p>
+                    <a href="https://goo.gl/maps/v1FekCpu9J1ociPZ9">Click here to view location</a>
+                </div>
+                <!--END POI 3-->
+
+                <!--POI 4-->
+                <div class="text-container">
+                    <h3>Queretaro Downtown</h3>
+                    <p>The heart of the town is full with historical buildings, monuments, fountains and gardens; lots of things to do and places to visit, and corridors to walk around.</p>
+                    <a href="https://goo.gl/maps/GGEbu2KCNy99Lhyt5">Click here to view location</a>
+                </div>
+                <!--END POI 4-->
+
+                <!--POI 5-->
+                <div class="text-container">
+                    <h3>EL Cerrito Archaeological site</h3>
+                    <p>Archaeological site from approximately 300 BCE featuring a pyramid, guides & interpretive trails.</p>
+                    <a href="https://goo.gl/maps/oQUqBKixGmhGxZg97">Click here to view location</a>
+                </div>
+                <!--END POI 5-->
+
+                <!--POI 6-->
+                <div class="text-container">
+                    <h3>Museum of Contemporary Arts of Queretaro</h3>
+                    <p>Immerse yourself into world-class art, exciting history, and mind-bending science.
+                        </>
+                        <a href="https://goo.gl/maps/omgB9XPeJrjiYSMy9">Click here to view locations</a>
+                </div>
+                <!--END POI 6-->
+
+            </div>
+        </div>
+    </div>
+    <!--END POI-->
+
+    <!--GALLERY-->
+    <div id="GALLERY">
+        <h4>Gallery</h4>
+        <p>The city and surroundings offer amazing touristic attractions if all kinds for families and adults to enjoy. There are multiple spots in the city that offer wokderful views and scenarios of al kinds, from historic buildings, modern architecture
+            and natural panoramic views; no matter how long your stay is, there will always be something different to do and an amazing place to visit.
+        </p>
+        <span class="flex-container">
+
+            <!--PHOTO CONTAINER 1-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./image/gallery/q1.png" onclick="openModal();currentSlide(1)" alt="Los Arcos" height="300px" width="450px">
+                    <div class="photo-overlay">
+                        <p class="p-overlay">Los arcos</p>
+                    </div>
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 1-->
+
+            <!--PHOTO CONTAINER 2-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./image/gallery/q2.png" onclick="openModal();currentSlide(2)" alt="fuente del danzante conchero" height="300px" width="450px">
+                    <div class="photo-overlay">
+                        <p class="p-overlay">Fuente del danzante conchero</p>
+                    </div>
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 2-->
+
+            <!--PHOTO CONTAINER 3-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./image/gallery/q3.png" onclick="openModal();currentSlide(3)" alt="Streets of downtown" height="300px" width="450px">
+                    <div class="photo-overlay">
+                        <p class="p-overlay">Streets of downtown Queretaro</p>
+                    </div>
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 3-->
+
+            <!--PHOTO CONTAINER 4-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./image/gallery/q4.png" onclick="openModal();currentSlide(4)" alt="Art museum Queretaro" height="300px" width="450px">
+                    <div class="photo-overlay">
+                        <p class="p-overlay">Museum of Art Queretaro</p>
+                    </div>
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 4-->
+
+            <!--PHOTO CONTAINER 5-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./image/gallery/q5.png" onclick="openModal();currentSlide(5)" alt="Plaza Constitucion" height="300px" width="450px">
+                    <div class="photo-overlay">
+                        <p class="p-overlay">Plaza Constitucion</h3>
+                    </div>
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 5-->
+
+            <!--PHOTO CONTAINER 6-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./image/gallery/q6.png" onclick="openModal();currentSlide(6)" alt="Jardin Zenea" height="300px" width="450px">
+                    <div class="photo-overlay">
+                        <p class="p-overlay">Jardin Zenea</p>
+                    </div>
+                </div>
+            </div>
+            <!--END PHOTO CONTAIER 6-->
+
+            <!--PHOTO CONTAINER 7-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./image/gallery/q7.png" onclick="openModal();currentSlide(7)" alt="Downtown corridors" height="300px" width="450px">
+                    <div class="photo-overlay">
+                        <p class="p-overlay">Downtown corridors</p>
+                    </div>
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 7-->
+
+            <!--PHOTO CONTAINER 8-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./image/gallery/q8.png" onclick="openModal();currentSlide(8)" alt="Queretaro Restaurants" height="300px" width="450px">
+                    <div class="photo-overlay">
+                        <p class="p-overlay">One of many Queretaro's nicest restaurants</p>
+                    </div>
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 8-->
+
+            <!--PHOTO CONTAINER 9-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./image/gallery/q9.png" onclick="openModal();currentSlide(9)" alt="Queretaro Nightlife" height="300px" width="450px">
+                    <div class="photo-overlay">
+                        <p class="p-overlay">One of many Queretaro's nicest nightclubs</p>
+                    </div>
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 9-->
+        </span>
+    </div>
+    <!--END GALLERY-->
+
+    <!--THE MODAL/LIGHTBOX-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1/9</div>
+                <img src="./image/gallery/q1.png" style="width:100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2/9</div>
+                <img src="./image/gallery/q2.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3/9</div>
+                <img src="./image/gallery/q3.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4/9</div>
+                <img src="./image/gallery/q4.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5/9</div>
+                <img src="./image/gallery/q5.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6/9</div>
+                <img src="./image/gallery/q6.png" style="width: 100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7/9</div>
+                <img src="./image/gallery/q7.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8/9</div>
+                <img src="./image/gallery/q8.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9/9</div>
+                <img src="./image/gallery/q9.png" style="width: 100%;">
+            </div>
+
+            <!--CONTROLS-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--CAPTION-->
+            <div class="caption-containet">
+                <p id="caption"></p>
+            </div>
+
+            <!--THUMBNAILS-->
+            <div class="column">
+                <img class="demo" src="./image/gallery/q1.png" onclick="currentSlide(1)" alt="Los Arcos">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./image/gallery/q2.png" onclick="currentSlide(2)" alt="Fuente del conchero">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./image/gallery/q3.png" onclick="currentSlide(3)" alt="streets">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./image/gallery/q4.png" onclick="currentSlide(4)" alt="Museum of Art">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./image/gallery/q5.png" onclick="currentSlide(5)" alt="Plaza">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./image/gallery/q6.png" onclick="currentSlide(6)" alt="Jardin">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./image/gallery/q7.png" onclick="currentSlide(7)" alt="corridor">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./image/gallery/q8.png" onclick="currentSlide(8)" alt="restaurants">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./image/gallery/q9.png"onclick="currentSlide(9)" alt="night clubs">
+            </div>
+        </div>
+    </div>
+    <!--END MODAL/LIGHTBOX-->
+
+    <!--BOOKING-->
+    <div id="BOOK">
+        <div class="book">
+            <h4>Contact to book a trip</h4>
+            <p>Please leave us a message and your contact information.</p>
+            <div class="contact-form">
+
+                <!--CONTACT FORM-->
+                <form action="" method="">
+                    <input class="contact" type="text" value="" placeholder="Name">
+                    <input class="contact" type="text" value="" placeholder="Email address">
+                    <input class="contact" type="text" value="" placeholder="Phone number">
+                    <input class="contact" type="text" value="" placeholder="Date you wish to travell">
+                    <div class="form-spacer">
+                        <div>
+                            <input type="submit" vlaue="submit">
+                        </div>
+                    </div>
+                </form>
+                <!--END CONTACT FORM-->
+            </div>
+        </div>
+    </div>
+    <!--END BOOKING-->
+
+    <!--FOOTERS-->
+    <div id="footer">
+        azambranor.23@gmail.com &nbsp;|&nbsp; &copy;
+    </div>
+    <!--END FOOTER-->
+
+</body>
+
+</html>

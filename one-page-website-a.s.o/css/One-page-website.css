@@ -1,0 +1,331 @@
+/*-------------AUTHOR ANDREA ZAMBRANO-------------*/
+
+
+/*-------------GENERIC STYLE---------------*/
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #3c3c3c;
+    align-content: center;
+    width: auto;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #787878;
+    line-height: 1.2;
+    width: 100%;
+    background-color: #fff;
+    width: auto;
+    align-content: center;
+}
+
+footer,
+nav {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    line-height: 100px;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px #3cb371;
+    padding: 10px;
+    letter-spacing: 6pt;
+    word-spacing: 8pt;
+    background-color: #787878;
+}
+
+h2 {
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px;
+    font-weight: 100;
+}
+
+h3 {
+    line-height: 1.4;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 3px 2px 2px #3cb371;
+    background: #787878;
+}
+
+h4 {
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: #3cb371;
+    text-shadow: 3px 2px 2px #787878;
+}
+
+p {
+    text-align: center;
+    padding-left: 1cm;
+    padding-right: 1cm;
+}
+
+p.p-overlay {
+    text-align: center;
+    margin-top: -75px;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 3px 2px 2px #3cb371;
+}
+
+a {
+    font-size: 15px;
+    text-align: center;
+}
+
+#HOME {
+    background: url(../image/hero.png);
+    background-attachment: scroll;
+    background-size: cover;
+    width: auto;
+    display: block;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    color: #3c3c3c;
+}
+
+
+/*------------------------------
+-----FLEX CONTAINERS------------
+------------------------------*/
+
+.flex-container {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 1px auto;
+    align-content: center;
+    border: 5px ridge #3cb371;
+    border-radius: 10px;
+}
+
+.text-container {
+    height: 250px;
+    width: 450px;
+    box-shadow: 1px 2px 2px #3c3c3c;
+    background: #fff;
+    border: 5px ridge #3cb371;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.photo-container {
+    height: 300px;
+    width: 450px;
+    box-shadow: 2px 3px 3px #3c3c3c;
+    margin-left: 27px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------
+-------COLUMNS AND ROWS--------*/
+
+.row > .column {
+    padding: 0 1px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*---------------------------------
+FOUR EQUAL COLUMNS THAT FLOAT----*/
+.column {
+    float: left;
+    width: 11%;
+    padding-bottom: 100px;
+}
+
+
+
+/*-----------------------------------
+----MODAL/LIGHTBOX BACKGROUND------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0%;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/*CLOSE BUTTON*/
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*HIDE SLIDES */
+.mySlides {
+    display: none;
+}
+
+/*NEXT & PREVIOUS BUTTONS */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/*POSITION NEXT BUTTON*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*HOVER*/
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*CAPTION TEXT*/
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+    width: 100px;
+    height: 100px;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*-------------------------------
+---------CONTACT FORM------------
+-------------------------------*/
+
+.contact-form form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    padding: 10px 12px;
+    border: 5px ridge #3cb371;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    width: auto;
+    text-align: center;
+}
+
+.contact-form input[type="text"] {
+    font-size: 25px;
+    outline: none;
+    font-weight: 600;
+    color: #3c3c3c;
+    padding: 24 14 24 74;
+    width: 80%;
+    border: 3px outset #3cb371;
+    margin: 10px 1cm;
+    border-radius: 10px;
+}
+
+.contact-form input[type="text"]:hover {
+    border: 3px inset #787878;
+    background: #3c3c3c;
+    font-size: 25px;
+    font-weight: 400;
+    color: #3cb371;
+}
+
+.contact-form input[type="submit"] {
+    font-size: 25px;
+    outline: none;
+    font-weight: 600;
+    background: #fff;
+    padding: 24 14 24 74;
+    width: 15%;
+    border: 3px outset #3cb371;
+    margin: 10px 1cm;
+    border-radius: 10px;
+}
+
+.contact-form input[type="submit"]:hover {
+    color: #3c3c3c;
+    background: #a6ffb3;
+    border: 3px inset #3cb371;
+}
